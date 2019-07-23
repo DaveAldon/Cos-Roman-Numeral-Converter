@@ -10,6 +10,7 @@ This is an ObjectScript function to convert numbers to roman numerals. It also t
 
 Takes in a number, or dynamic array of numbers, and turns them into roman numerals. Works up to 3,999. If you find a number that isn't accurate, please report it in the issues tab.
 
+There is only one parameter:
 * **val (Required String)**: The number or dynamic array to be converted.
 
 ## Example Usage
@@ -20,6 +21,7 @@ XII
 USER> set x = ["12","13"]
 USER> write ##class(RomanNumerals.RomanNumerals).Translate(x)
 11@%Library.DynamicArray
+```
 
 Errors will be returned. If you don't use a number inside of a string, it won't respond with anything.
 
